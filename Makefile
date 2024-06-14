@@ -6,15 +6,17 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/12 10:45:16 by nlewicki          #+#    #+#              #
-#    Updated: 2024/06/12 13:14:55 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/06/14 08:47:18 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CFILES = FdF.c \
+		 read_map.c \
+		 draw.c \
 
 NAME = fdf
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+# CFLAGS = -Wall -Wextra -Werror
 MLXFLAGS = -Iminilibx_macos -Lminilibx_macos -lmlx -framework OpenGL -framework AppKit
 OBJS = $(CFILES:.c=.o)
 
