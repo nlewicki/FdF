@@ -6,7 +6,7 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:07:18 by nlewicki          #+#    #+#              #
-#    Updated: 2024/06/12 11:47:01 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/07/02 14:26:13 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ files = ft_bzero.c \
 		ft_strmapi.c \
 		ft_striteri.c \
 		ft_split.c \
+		ft_atoi_base.c \
 
 bonus = ft_lstnew_bonus.c \
 		ft_lstadd_front_bonus.c \
@@ -54,6 +55,7 @@ bonus = ft_lstnew_bonus.c \
 		ft_lstclear_bonus.c \
 		ft_lstiter_bonus.c \
 		ft_lstmap_bonus.c \
+
 
 Compiler = cc
 CmpFlags = -Wall -Wextra -Werror

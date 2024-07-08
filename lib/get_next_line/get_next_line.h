@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 11:45:32 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/06/12 12:25:33 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/07/01 13:46:53 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <fcntl.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+#  define BUFFER_SIZE 500
 # endif
 
 char	*get_next_line(int fd);

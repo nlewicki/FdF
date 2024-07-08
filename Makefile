@@ -6,21 +6,26 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/12 10:45:16 by nlewicki          #+#    #+#              #
-#    Updated: 2024/06/14 08:47:18 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/07/04 09:07:49 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CFILES = FdF.c \
 		 read_map.c \
+		 read_map_utils.c \
+		 read_map_utils2.c \
 		 draw.c \
+		 draw_color.c \
+		 utils.c \
+		 utils2.c \
+		 free_data.c \
 
 NAME = fdf
 CC = cc
-# CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 MLXFLAGS = -Iminilibx_macos -Lminilibx_macos -lmlx -framework OpenGL -framework AppKit
 OBJS = $(CFILES:.c=.o)
 
-# directories and libraries
 LIBFT_DIR = lib/libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
@@ -38,7 +43,6 @@ $(NAME): libft printf gnl minilibx $(OBJS)
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-# build printf and libft
 printf:
 	@make -C $(PRINTF_DIR)
 
