@@ -6,11 +6,11 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 09:52:06 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/07/04 13:19:14 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 09:30:58 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "../include/FdF.h"
 
 void	set_middle(t_data *data, int x0_or_x1)
 {

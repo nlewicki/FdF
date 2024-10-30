@@ -6,7 +6,7 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 10:50:59 by nlewicki          #+#    #+#              #
-#    Updated: 2024/05/02 12:17:32 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/10/30 09:34:51 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,18 +24,18 @@ CFILES = $(FILES)
 OFILES = $(CFILES:.c=.o)
 
 $(NAME): $(OFILES)
-	$(AR) rcs $(NAME) $(OFILES)
+	@$(AR) rcs $(NAME) $(OFILES)
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $?
+	@$(CC) -c $(CFLAGS) $?
 
 all: $(NAME)
 
 clean:
-	rm -f $(OFILES)
+	@rm -f $(OFILES)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 

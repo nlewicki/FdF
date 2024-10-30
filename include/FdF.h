@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 09:22:45 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/07/03 09:17:46 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 09:30:17 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <math.h>
-# include "minilibx_macos/mlx.h"
-# include "lib/get_next_line/get_next_line.h"
-# include "lib/libft/libft.h"
-# include "lib/ft_printf/ft_printf.h"
+# include "../minilibx_macos/mlx.h"
+# include "../lib/get_next_line/get_next_line.h"
+# include "../lib/libft/libft.h"
+# include "../lib/ft_printf/ft_printf.h"
 
 # define WIDTH 1920
 # define HEIGHT 1080

@@ -6,7 +6,7 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/12 11:46:20 by nlewicki          #+#    #+#              #
-#    Updated: 2024/06/12 11:48:16 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/10/30 09:35:26 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,19 +21,19 @@ OFILES   = $(files:.c=.o)
 NAME     = get_next_line.a
 
 $(NAME): $(OFILES)
-	ar rsc $(NAME) $(OFILES)
+	@ar rsc $(NAME) $(OFILES)
 
 all: $(NAME)
 
 clean:
-	rm -f $(OFILES) $(bonus:.c=.o)
+	@rm -f $(OFILES) $(bonus:.c=.o)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
 bonus: $(bonus:.c=.o)
-	$(AR) -r $(NAME) $?
+	@$(AR) -r $(NAME) $?
 
 .PHONY: all, clean, fclean, re, bonus

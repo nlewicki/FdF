@@ -6,11 +6,11 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 10:35:51 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/07/03 12:53:04 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 09:30:43 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "../include/FdF.h"
 
 int	get_line_width(char *line)
 {

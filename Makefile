@@ -6,19 +6,19 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/12 10:45:16 by nlewicki          #+#    #+#              #
-#    Updated: 2024/07/04 09:07:49 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/10/30 09:32:46 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CFILES = FdF.c \
-		 read_map.c \
-		 read_map_utils.c \
-		 read_map_utils2.c \
-		 draw.c \
-		 draw_color.c \
-		 utils.c \
-		 utils2.c \
-		 free_data.c \
+CFILES = src/FdF.c \
+		 src/read_map.c \
+		 src/read_map_utils.c \
+		 src/read_map_utils2.c \
+		 src/draw.c \
+		 src/draw_color.c \
+		 src/utils.c \
+		 src/utils2.c \
+		 src/free_data.c \
 
 NAME = fdf
 CC = cc
@@ -58,15 +58,19 @@ minilibx:
 all: $(NAME)
 
 clean:
-	rm -f $(OBJS)
+	@rm -f $(OBJS)
 	@make -C $(LIBFT_DIR) clean
 	@make -C $(PRINTF_DIR) clean
 	@make -C $(GNL_DIR) clean
 	@make -C minilibx_macos clean
+	@echo "\033[90mclean\033[0m"
 
 fclean: clean
-	rm -f $(NAME)
-	rm -f $(LIBFT) $(PRINTF) $(GNL) $(MINILIBX)
+	@rm -f $(NAME)
+	@rm -f $(LIBFT) $(PRINTF) $(GNL) $(MINILIBX)
+	@echo "\033[90mand\033[0m"
+	@echo "\033[90mfclean\033[0m"
+
 
 re: fclean all
 

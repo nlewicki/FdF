@@ -6,11 +6,11 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 12:02:50 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/07/04 13:20:10 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 09:28:54 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "../include/FdF.h"
 
 int	key_hook2(int keycode, t_data *img)
 {

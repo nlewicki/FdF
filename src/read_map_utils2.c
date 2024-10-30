@@ -6,11 +6,11 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 14:09:10 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/07/03 09:25:29 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 09:30:46 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "../include/FdF.h"
 
 void	malloc_error(t_data *data)
 {
